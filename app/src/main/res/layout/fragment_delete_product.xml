@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity.Fragment.FragmentDeleteProduct">
+
+    <TextView
+        android:id="@+id/textview_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@assets/font/quicksand_bold"
+        android:text="Delete / Update Menu"
+        android:textColor="#0F0F0F"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/button_breakfast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_head"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/bg_button"
+        android:text="Breakfast"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/button_lunch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_breakfast"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/bg_button"
+        android:text="Lunch"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/button_thali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_breakfast"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/bg_button"
+        android:text="Thali"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/button_noodles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_thali"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/bg_button"
+        android:text="Noodles"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/button_rice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_noodles"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/bg_button"
+        android:text="Rice"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/button_dessert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_rice"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/bg_button"
+        android:text="Dessert"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/button_drinks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_dessert"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/bg_button"
+        android:text="Drinks"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+</RelativeLayout>

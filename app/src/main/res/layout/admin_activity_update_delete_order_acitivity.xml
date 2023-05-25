@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".AdminActivity.UpdateDeleteOrderAcitivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="9dp"
+                android:text="Name"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/edittext_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_editext"
+                android:editable="false"
+                android:paddingLeft="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="10dp"
+                android:text="Mobile number"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/edittext_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_editext"
+                android:editable="false"
+                android:paddingLeft="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="10dp"
+                android:text="Email id"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/edittext_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_editext"
+                android:editable="false"
+                android:paddingLeft="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="10dp"
+                android:text="Address"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/edittext_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_editext"
+                android:editable="false"
+                android:paddingLeft="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="10dp"
+                android:text="Order Date and Time"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/edittext_order_date_time"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_editext"
+                android:editable="false"
+                android:paddingLeft="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="10dp"
+                android:text="Order id"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/edittext_orderid"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_editext"
+                android:editable="false"
+                android:paddingLeft="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="10dp"
+                android:text="Orderlist"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/edittext_orderlist"
+                android:layout_width="match_parent"
+                android:paddingStart="15dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_editext"
+                android:editable="false"
+                android:paddingLeft="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="10dp"
+                android:text="Grandtotal"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/edittext_grandtotal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_editext"
+                android:editable="false"
+                android:paddingLeft="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="10dp"
+                android:text="Order status"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/edittext_order_status"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_editext"
+                android:editable="false"
+                android:hint="Accepted and prepare food"
+                android:paddingLeft="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="9dp"
+                android:id="@+id/tv_order_completed_status"
+                android:layout_marginTop="10dp"
+                android:text="Order completed status"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/edittext_order_completed_status"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_editext"
+                android:editable="false"
+                android:paddingLeft="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_order_otp"
+                android:text="OTP"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/edittext_order_otp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_editext"
+                android:hint="Order Otp"
+                android:paddingLeft="12dp" />
+
+            <Button
+                android:id="@+id/button_acceptorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/bg_button"
+                android:onClick="acceptOrder"
+                android:text="Accept Order"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/button_rejectorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/bg_button"
+                android:onClick="rejectOrder"
+                android:text="Reject Order"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/button_ordercomplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/bg_button"
+                android:onClick="orderComplete"
+                android:text="Completed Order"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/button_otpverify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/bg_button"
+                android:onClick="verifyOrderOtp"
+                android:text="OTP Verify"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/menu_item_showservices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="deleteOrder"
+        android:src="@drawable/delete_order"
+        app:fab_colorNormal="#03DEFA"
+        app:fab_colorPressed="#B9E5F8"
+        app:fab_label="Show Services"
+        app:fab_size="normal"
+        app:menu_colorNormal="#F02113"
+        app:menu_colorPressed="#fff"
+        app:menu_fab_size="normal"
+        app:rippleColor="#FFF" />
+
+</RelativeLayout>

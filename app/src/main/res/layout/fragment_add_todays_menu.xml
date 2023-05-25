@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".AdminActivity.Fragment.FragmentAddTodaysMenu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/textview_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@assets/font/quicksand_bold"
+                android:text="Add Today's Menu"
+                android:textColor="#0F0F0F"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:id="@+id/addpro_imageview"
+                android:layout_height="150dp"
+                android:src="@drawable/add_image"
+                android:layout_below="@id/textview_head"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:id="@+id/edittext_productName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/addpro_imageview"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/bg_editext"
+                android:hint="Product Name"
+                android:inputType="text"
+                android:paddingLeft="18dp"
+                android:paddingEnd="15dp" />
+
+            <EditText
+                android:id="@+id/edittext_productPrice"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/edittext_productName"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/bg_editext"
+                android:hint="Product Price"
+                android:inputType="number"
+                android:paddingLeft="18dp"
+                android:paddingEnd="15dp" />
+
+            <TextView
+                android:id="@+id/textview_food_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edittext_productPrice"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@assets/font/quicksand_bold"
+                android:text="Food Category"
+                android:textColor="#0F0F0F"
+                android:textSize="17dp" />
+
+            <Spinner
+                android:id="@+id/spinner_productCategory_todaymenu"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/textview_food_category"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="80dp" />
+
+            <Button
+                android:id="@+id/button_submitProductData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_productCategory_todaymenu"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/bg_button"
+                android:text="Submit"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

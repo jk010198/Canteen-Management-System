@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/background_gradient">
+
+        <ImageView
+            android:id="@+id/productlist_imageview"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/textview_foodname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toEndOf="@id/productlist_imageview"
+            android:text="Name:- "
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_productcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_foodname"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/productlist_imageview"
+            android:text="category"
+            android:textColor="#fff"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_foodname"
+            android:layout_marginLeft="40dp"
+            android:layout_toEndOf="@id/tv_productcategory"
+            android:text="price:- "
+            android:textColor="#fff"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/ib_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_productcategory"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@id/tv_count"
+            android:background="@drawable/ic_add"
+            android:backgroundTint="#fff"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_productcategory"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="14dp"
+            android:layout_toEndOf="@id/ib_remove"
+            android:text="0"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/ib_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_productcategory"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@id/productlist_imageview"
+            android:background="@drawable/ic_remove"
+            android:backgroundTint="#fff"
+            android:focusable="false" />
+
+    </RelativeLayout>
+</RelativeLayout>

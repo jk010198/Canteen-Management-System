@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsersActivity.HomePageActivity">
+
+    <TextView
+        android:id="@+id/textview_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@assets/font/quicksand_bold"
+        android:text="Today's Special"
+        android:textColor="#0F0F0F"
+        android:textSize="28dp" />
+
+    <ListView
+        android:id="@+id/listview_todays_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_bottom"
+        android:layout_below="@id/textview_head" />
+
+    <TextView
+        android:id="@+id/textview_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="No item available"
+        android:textColor="#000"
+        android:visibility="invisible" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="45dp"
+        app:menu_colorNormal="#03A9F4"
+        app:menu_colorPressed="#00E9FE"
+        app:menu_fab_size="normal"
+        app:rippleColor="#FFF">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item_breakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="breakfast"
+            android:src="@drawable/canteen"
+            app:fab_colorNormal="#fff"
+            app:fab_colorPressed="#2EA2DA"
+            app:fab_label="Breakfast"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item_lunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="lunch"
+            android:src="@drawable/canteen"
+            app:fab_colorNormal="#fff"
+            app:fab_colorPressed="#2EA2DA"
+            app:fab_label="Lunch"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item_thali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="thali"
+            android:src="@drawable/canteen"
+            app:fab_colorNormal="#fff"
+            app:fab_colorPressed="#2EA2DA"
+            app:fab_label="Thali"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item_noodles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="noodles"
+            android:src="@drawable/canteen"
+            app:fab_colorNormal="#fff"
+            app:fab_colorPressed="#2EA2DA"
+            app:fab_label="Noodles"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item_rice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="rice"
+            android:src="@drawable/canteen"
+            app:fab_colorNormal="#fff"
+            app:fab_colorPressed="#2EA2DA"
+            app:fab_label="Rice"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item_dessert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="dessert"
+            android:src="@drawable/canteen"
+            app:fab_colorNormal="#fff"
+            app:fab_colorPressed="#2EA2DA"
+            app:fab_label="Dessert"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item_drinks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="drinks"
+            android:src="@drawable/canteen"
+            app:fab_colorNormal="#fff"
+            app:fab_colorPressed="#2EA2DA"
+            app:fab_label="Drinks"
+            app:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/rupees_logo"
+            android:layout_width="wrap_content"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="₹"
+            android:textSize="27dp" />
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            android:layout_toEndOf="@id/rupees_logo"
+            android:text="0.0"
+            android:textSize="27dp" />
+
+        <Button
+            android:id="@+id/button_viewcart"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="View Cart→"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

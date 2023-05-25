@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".AdminActivity.UpdateTodaysProduct">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/textview_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@assets/font/quicksand_bold"
+                android:text="Update"
+                android:textColor="#0F0F0F"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/updateproduct_imageview"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textview_head"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/add_image"
+                />
+
+            <EditText
+                android:id="@+id/edittext_updateproductName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/updateproduct_imageview"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/bg_editext"
+                android:hint="Product Name"
+                android:inputType="text"
+                android:paddingLeft="18dp"
+                android:paddingEnd="15dp" />
+
+            <EditText
+                android:id="@+id/edittext_updateproductPrice"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/edittext_updateproductName"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/bg_editext"
+                android:hint="Product Price"
+                android:inputType="number"
+                android:paddingLeft="18dp"
+                android:paddingEnd="15dp" />
+
+            <TextView
+                android:id="@+id/textview_food_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edittext_updateproductPrice"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@assets/font/quicksand_bold"
+                android:text="Food Category"
+                android:textColor="#0F0F0F"
+                android:textSize="17dp" />
+
+            <Spinner
+                android:id="@+id/spinner_updateproductCategory"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/textview_food_category"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="80dp" />
+
+            <Button
+                android:id="@+id/button_submitProductData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_updateproductCategory"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/bg_button"
+                android:onClick="updateImgData"
+                android:text="Update"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/menu_item_breakfast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="delete"
+        android:src="@drawable/delete"
+        app:fab_colorNormal="#fff"
+        app:fab_colorPressed="#63DAE9"
+        app:fab_label="Delete"
+        app:fab_size="normal"
+        app:menu_colorNormal="#03A9F4"
+        app:menu_colorPressed="#00E9FE"
+        app:menu_fab_size="normal"
+        app:rippleColor="#FFF" />
+
+</RelativeLayout>
